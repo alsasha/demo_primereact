@@ -2,11 +2,62 @@
 @import '/src/styles/typography.scss';
 
 .p-treetable {
+  .p-treetable-thead > tr > th {
+    padding: 10px 4px;
+    border: none;
+    border-bottom: 1px solid $grey-100;
+  }
+  .p-treetable-tbody > tr > td {
+    padding: 14px 4px;
+    @include body2;
+    color: $grey-900;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .p-column-title {
+    @include caption;
+    color: $grey-700;
+  }
+  .p-sortable-column-icon:before {
+    font-size: $iconSize;
+  }
+  .name-cell {
+    &-text {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &.button-hidden {
+      .p-treetable-toggler {
+        display: none;
+      }
+    }
+    &-inner {
+      display: inline-flex;
+      align-items: center;
+      width: calc(100% - 50px);
+    }
+  }
+  .p-treetable-tbody > tr:first-child > td {
+    border-top: 0;
+  }
+  .p-treetable-tbody > tr > td {
+    border-left: 0;
+    border-right: 0;
+    border-color: $grey-50;
+    & .p-treetable-toggler {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .p-treetable-tbody > tr:hover {
+    background: $primary-hover-bg;
+  }
   .p-treetable-header {
     display: flex;
     flex-direction: column;
     gap: 10px;
-
+    border-bottom: 0;
     .table-header-top {
       display: flex;
       gap: 5px;

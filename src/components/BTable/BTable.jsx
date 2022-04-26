@@ -119,10 +119,10 @@ const BTable = () => {
 
   const expandableTemplate = rowData => {
     return (
-      <>
-        {rowData.children ? <i className="pi pi-folder" /> : null}
-        <span>{rowData.data.name}</span>
-      </>
+      <div className="name-cell-inner">
+        {rowData.children ? <i className="pi pi-folder mr-2" /> : null}
+        <span className="name-cell-text">{rowData.data.name}</span>
+      </div>
     )
   }
 
@@ -142,7 +142,14 @@ const BTable = () => {
       header={header}
       onSort={handleSortColumn}
     >
-      <Column style={{ width: '200px' }} body={expandableTemplate} field="name" header="Name" expander sortable />
+      <Column
+        className="name-cell"
+        body={expandableTemplate}
+        field="name"
+        header="Name"
+        expander
+        sortable
+      />
       <Column field="description" header="Description" sortable />
       <Column field="jobType" header="Job Type" sortable />
       <Column field="dueDate" header="Due Date" sortable />

@@ -8,6 +8,14 @@
 .languages {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+
+  .p-buttonset .p-button {
+    @include caption;
+    color: $grey-700;
+    min-width: auto;
+    padding: 6px 10px;
+  }
 }
 
 .toolbar {
