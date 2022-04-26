@@ -1,0 +1,55 @@
+@import '/src/styles/colors.scss';
+@import '/src/styles/typography.scss';
+
+.p-button {
+  background: $primary;
+  color: $primary-contrastText;
+}
+
+.p-button:enabled:hover,
+.p-button:not(button):not(a):not(.p-disabled):hover {
+  background: $primary;
+  color: $primary-contrastText;
+}
+
+.p-button.p-button-secondary,
+.p-buttonset.p-button-secondary > .p-button,
+.p-splitbutton.p-button-secondary > .p-button,
+.p-fileupload-choose.p-button-secondary {
+  background: $grey-25;
+  color: $grey-700;
+}
+
+.p-button.p-button-secondary:enabled:hover,
+.p-button.p-button-secondary:not(button):not(a):not(.p-disabled):hover,
+.p-buttonset.p-button-secondary > .p-button:enabled:hover,
+.p-buttonset.p-button-secondary > .p-button:not(button):not(a):not(.p-disabled):hover,
+.p-splitbutton.p-button-secondary > .p-button:enabled:hover,
+.p-splitbutton.p-button-secondary > .p-button:not(button):not(a):not(.p-disabled):hover,
+.p-fileupload-choose.p-button-secondary:enabled:hover,
+.p-fileupload-choose.p-button-secondary:not(button):not(a):not(.p-disabled):hover {
+  background: $grey-50;
+  color: $grey-700;
+}
+
+.languages {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.toolbar {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.lang-input {
+  width: 100%;
+}
+
+.field {
+  .p-inputtext {
+    width: 100%;
+  }
+}

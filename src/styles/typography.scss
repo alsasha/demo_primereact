@@ -1,0 +1,84 @@
+@mixin h1 {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+@mixin h2 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  line-height: 24px;
+}
+
+@mixin h3 {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  line-height: 24px;
+}
+
+@mixin h4 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+  line-height: 24px;
+}
+
+@mixin h5 {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  line-height: 24px;
+}
+
+@mixin h6 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 20px;
+}
+
+@mixin subtitle1 {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.00938em;
+  line-height: 20px;
+}
+
+@mixin subtitle2 {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.00714em;
+  line-height: 16px;
+}
+
+@mixin body1 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 28px;
+}
+
+@mixin body2 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+}
+
+@mixin caption {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  line-height: 16px;
+}
+
+@mixin overline {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 16px;
+}

@@ -1,0 +1,21 @@
+@import 'colors';
+
+.p-inputtext:enabled:focus {
+  box-shadow: none;
+  border: $border-focus;
+}
+
+.p-checkbox .p-checkbox-box.p-highlight {
+  color: $primary-main;
+  background: $primary-main;
+  border-color: $primary-main;
+}
+
+.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-highlight:hover {
+  background: $primary-main;
+  border-color: $primary-main;
+}
+
+.p-checkbox .p-checkbox-box.p-highlight:not(.p-disabled).p-focus {
+  border-color: $primary-main;
+}

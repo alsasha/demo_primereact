@@ -1,0 +1,122 @@
+$primary: #f35627;
+$secondary: #10153a;
+
+$border-default: 1px solid rgba(0, 0, 0, 0.23);
+$border-focus: 1px solid rgba(0, 0, 0, 0.87);
+$border-radius: 4px;
+
+$layout-minWidth: 1140;
+
+$grey-25: #f8f8fa; // background
+$grey-50: #f0f2f5; // hover & drag
+$grey-75: #e9ebf0;
+$grey-100: #e1e4eb; // selected
+$grey-200: #d0d5d9; // disabled
+$grey-200: #d0d5d9;
+$grey-300: #b7bdc4;
+$grey-400: #a1a7ad;
+$grey-500: #898f96; // enabled
+$grey-600: #6f7880;
+$grey-700: #576069;
+$grey-800: #404952;
+$grey-900: #22282e; // Text
+
+$primary-light: lighten($primary, 14%);
+$primary-main: $primary;
+$primary-dark: darken($primary, 14%);
+$primary-contrastText: #fff;
+
+$secondary-light: lighten($secondary, 14%);
+$secondary-main: $secondary;
+$secondary-dark: darken($secondary, 14%);
+$secondary-contrastText: #fff;
+
+$default-main: #22282e;
+$default-contrastText: #fff;
+
+$error-main: #e12d39;
+$error-contrastText: #fff;
+
+$info-main: #22282e;
+$info-contrastText: #fff;
+
+$success-main: #7bd819;
+$success-contrastText: #fff;
+
+$warning-main: #f35627;
+$warning-contrastText: #fff;
+
+$indigo-100: #b0d0ff;
+$indigo-300: #5e8aee;
+$indigo-500: #2251cc;
+$indigo-700: #132dad;
+
+$blue-100: #bae3ff;
+$blue-300: #47a3f3;
+$blue-500: #0967d2;
+$blue-700: #03449e;
+
+$lightblue-100: #b3ecff;
+$lightblue-300: #5ed0fa;
+$lightblue-500: #2bb0ed;
+$lightblue-700: #127fbf;
+
+$cyan-100: #c1fef6;
+$cyan-300: #62f4eb;
+$cyan-500: #1cd4d4;
+$cyan-700: #099aa4;
+
+$teal-100: #c6f7e9;
+$teal-300: #5fe3c0;
+$teal-500: #17b897;
+$teal-700: #048271;
+
+$green-100: #c1f2c7;
+$green-300: #51ca58;
+$green-500: #18981d;
+$green-700: #0e7817;
+
+$limegreen-100: #e6ffbf;
+$limegreen-300: #aff75c;
+$limegreen-500: #6cd410;
+$limegreen-700: #399709;
+
+$purple-100: #dac4ff;
+$purple-300: #a368fc;
+$purple-500: #8719e0;
+$purple-700: #690cb0;
+
+$magenta-100: #f8c4fe;
+$magenta-300: #f368fc;
+$magenta-500: #e019d0;
+$magenta-700: #b30ba3;
+
+$pink-100: #ffb8d2;
+$pink-300: #f364a2;
+$pink-500: #da127d;
+$pink-700: #a30664;
+
+$red-100: #ffbdbd;
+$red-300: #f86a6a;
+$red-500: #e12d39;
+$red-700: #ab091e;
+
+$orange-100: #ffd0b5;
+$orange-300: #ff9466;
+$orange-500: #f35627;
+$orange-700: #c52707;
+
+$yellow-100: #fff3c4;
+$yellow-300: #fadb5f;
+$yellow-500: #f0b429;
+$yellow-700: #cb6e17;
+
+$background-preview: #e6e6e6;
+$background-section: rgb(245, 245, 245);
+$background-mask: rgba(255, 255, 255, 0.5);
+
+$border-field: rgba(0, 0, 0, 0.23);
+$border-fieldFocus: rgba(0, 0, 0, 0.87);
+
+$white: #ffffff;
+$black: #000000;

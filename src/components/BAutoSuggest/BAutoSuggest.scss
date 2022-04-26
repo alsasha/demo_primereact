@@ -1,0 +1,34 @@
+@import '/src/styles/colors.scss';
+@import '/src/styles/typography.scss';
+
+.auto-suggest {
+  .p-autocomplete-dropdown,
+  .p-autocomplete-dropdown:hover {
+    background: transparent;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    padding: 10px;
+  }
+  .p-button:enabled:hover,
+  .p-button:not(button):not(a):not(.p-disabled):hover {
+    background: transparent;
+  }
+  .p-autocomplete-loader {
+    right: 44px !important;
+  }
+  .p-button-icon {
+    color: $grey-500;
+  }
+  .p-autocomplete-input {
+    border: $border-default;
+    border-radius: $border-radius;
+    color: $grey-900;
+    padding: 8px 14px;
+    @include body1;
+  }
+  .p-autocomplete-input:hover,
+  .p-autocomplete-input:focus {
+    border: $border-focus;
+  }
+}

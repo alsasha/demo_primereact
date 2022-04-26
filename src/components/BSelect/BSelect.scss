@@ -1,0 +1,135 @@
+@import '/src/styles/colors.scss';
+@import '/src/styles/typography.scss';
+
+.p-treeselect-trigger-icon {
+  color: $grey-500;
+}
+
+.p-treeselect {
+  width: 280px;
+  min-height: 40px;
+}
+
+.p-treeselect-label {
+  color: $grey-900;
+  padding: 8px 14px;
+  @include body1;
+}
+
+.p-treeselect:not(.p-disabled):hover {
+  box-shadow: none;
+  border: $border-focus;
+}
+
+.p-treeselect:not(.p-disabled).p-focus {
+  box-shadow: none;
+  border: $border-focus;
+}
+
+.p-treenode-content.p-highlight {
+}
+.custom-tree-select {
+  .p-treeselect-trigger-icon {
+    color: $grey-500;
+  }
+  .p-treeselect {
+    min-width: 280px;
+  }
+}
+
+.p-treeselect-trigger-icon:before {
+  font-size: 14px;
+}
+
+.p-chip-text {
+  margin-right: 4px;
+}
+
+.p-treeselect-trigger {
+  margin-right: 14px;
+}
+
+.p-treeselect-label-container .p-placeholder {
+  padding: 6px 6px 6px 14px;
+}
+
+.p-treeselect-filter-container .p-treeselect-filter {
+  padding: 10px;
+}
+
+.p-treeselect-close {
+  display: none;
+}
+
+.p-treeselect-filter-icon pi {
+  font-size: 14px;
+}
+
+.p-treeselect-panel .p-treeselect-header {
+  padding: 12px;
+}
+
+.p-tree {
+  padding: 12px;
+}
+
+.p-tree .p-tree-container .p-treenode {
+  padding: 0;
+  .p-treenode-content {
+    padding: 0;
+  }
+}
+
+.p-tree-toggler-icon:before {
+  font-size: 14px;
+}
+
+.p-tree .p-tree-container .p-treenode .p-treenode-content:focus.p-highlight {
+  background: $grey-100;
+}
+
+.p-tree .p-tree-container .p-treenode .p-treenode-content.p-highlight {
+  background: $grey-100;
+  color: $grey-900;
+}
+
+.p-tree-selectable {
+  .pi:before {
+    color: $grey-700;
+  }
+}
+
+.p-tree .p-tree-container .p-treenode .p-treenode-content:focus {
+  background: $grey-25;
+}
+
+.p-chip {
+  background: $grey-50;
+  @include body2;
+}
+
+.p-chip-remove-icon:before {
+  color: $grey-600;
+}
+
+.p-inputwrapper-filled.p-treeselect.p-treeselect-chip .p-treeselect-label {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.p-treeselect .p-treeselect-label {
+  position: relative;
+  .p-button {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    .pi:before {
+      font-size: 14px;
+    }
+  }
+}
+
+.subtree-loading {
+}
