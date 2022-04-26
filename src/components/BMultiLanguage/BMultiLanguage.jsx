@@ -21,54 +21,22 @@ const BMultiLanguage = () => {
   const [langsObj, setLangsObj] = useState(mlValue)
   const [currentLang, setCurrentLang] = useState('en')
 
-  console.log('==========>langsObj', langsObj)
-  console.log('==========>currentLang', currentLang)
-
   const handleOpen = () => {
     setOpen(true)
   }
 
   const handleClose = () => setOpen(false)
 
-  const handleSetLang = useCallback(value => () => setCurrentLang(value), [])
-
-  const handleLangValueChange = useCallback(key => e => {
-    console.log('==========>value', e)
-    setLangsObj(prevState => ({ ...prevState, [key]: e.target.value }))
-  })
+  const handleLangValueChange = useCallback(
+    key => e => {
+      setLangsObj(prevState => ({ ...prevState, [key]: e.target.value }))
+    },
+    []
+  )
 
   const handleInputChange = e => setLangsObj(prevState => ({ ...prevState, [currentLang]: e.target.value }))
 
-  const langOptions = [
-    { icon: 'pi pi-sliders-v', value: 'Sliders' },
-    { icon: 'pi pi-list', value: 'Bars' },
-    { icon: 'pi pi-sort-alt', value: 'SortAlt' }
-  ]
-
-  const options = Object.keys(mlValue).map((key, i) => {
-    return key
-  })
-  // {Object.keys(mlValue).map((key, i) => {
-  //               const renderKey = key.split('-')[0]
-  //               return (
-  //                 <Button
-  //                   onClick={handleSetLang(key)}
-  //                   active={key === currentLang}
-  //                   key={`${key}-${i}`}
-  //                   appearance="subtle"
-  //                   className="btn-switch-lang"
-  //                 >
-  //                   {renderKey}
-  //                 </Button>
-  //               )
-  //             })}
-
-  const langTemplate = option => {
-    return <i className={option.icon} />
-  }
-
-  console.log('==========>currentLang', currentLang)
-  console.log('==========>options', options)
+  const options = Object.keys(mlValue)
 
   const renderFooter = () => {
     return (
@@ -94,14 +62,17 @@ const BMultiLanguage = () => {
         </div>
         <Tooltip target=".pi-info-circle" content="Help information" />
         <span className="lang-input p-input-icon-right">
-          <i
-            className="pi
-pi-info-circle"
-          />
+          <i className="pi pi-info-circle" />
           <InputText placeholder="Enter text" value={langsObj[currentLang]} onChange={handleInputChange} />
         </span>
       </div>
-      <Dialog header="Header" visible={open} style={{ width: '50vw' }} footer={renderFooter()} onHide={handleClose}>
+      <Dialog
+        className="multilang-modal"
+        header="Header"
+        visible={open}
+        footer={renderFooter()}
+        onHide={handleClose}
+      >
         {Object.keys(langsObj).map((key, i) => {
           const uniqVal = `${key}-${i}`
           return (

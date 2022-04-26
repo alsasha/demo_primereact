@@ -19,3 +19,55 @@
 .p-checkbox .p-checkbox-box.p-highlight:not(.p-disabled).p-focus {
   border-color: $primary-main;
 }
+
+.p-button {
+  background: $primary;
+  color: $primary-contrastText;
+}
+
+.p-button:enabled:hover,
+.p-button:not(button):not(a):not(.p-disabled):hover {
+  background: $primary;
+  color: $primary-contrastText;
+}
+
+.p-button.p-button-secondary,
+.p-buttonset.p-button-secondary > .p-button,
+.p-splitbutton.p-button-secondary > .p-button,
+.p-fileupload-choose.p-button-secondary {
+  background: $grey-25;
+  color: $grey-700;
+}
+
+.p-button.p-button-secondary:enabled:hover,
+.p-button.p-button-secondary:not(button):not(a):not(.p-disabled):hover,
+.p-buttonset.p-button-secondary > .p-button:enabled:hover,
+.p-buttonset.p-button-secondary > .p-button:not(button):not(a):not(.p-disabled):hover,
+.p-splitbutton.p-button-secondary > .p-button:enabled:hover,
+.p-splitbutton.p-button-secondary > .p-button:not(button):not(a):not(.p-disabled):hover,
+.p-fileupload-choose.p-button-secondary:enabled:hover,
+.p-fileupload-choose.p-button-secondary:not(button):not(a):not(.p-disabled):hover {
+  background: $grey-50;
+  color: $grey-700;
+}
+
+.p-button:enabled:focus,
+.p-button:not(button):not(a):not(.p-disabled):focus {
+  background: $grey-100;
+}
+
+.p-button.p-button-text:enabled:hover,
+.p-button.p-button-text:not(button):not(a):not(.p-disabled):hover {
+  color: $grey-900;
+}
+
+.p-button.p-button-text {
+  color: $grey-900;
+}
+
+.p-button.p-button-text:enabled:focus,
+.p-button.p-button-text:not(button):not(a):not(.p-disabled):focus,
+.p-button.p-button-outlined:enabled:focus,
+.p-button.p-button-outlined:not(button):not(a):not(.p-disabled):focus {
+  background: $grey-100;
+}

@@ -7,7 +7,6 @@ import './BSelect.scss'
 
 const BSelect = () => {
   const [selectedNodeKeys2, setSelectedNodeKeys2] = useState(null)
-  const [currentRowIdLoading, setCurrentRowIdLoading] = useState(null)
 
   const onRemove = useCallback(item => {
     const { key } = item
@@ -33,13 +32,13 @@ const BSelect = () => {
         })
         return (
           <>
-            {chips}{' '}
+            {chips}
             <Button
               onClick={() => setSelectedNodeKeys2({})}
               icon="pi pi-times"
               className="p-button-rounded p-button-plain p-button-text"
               aria-label="Cancel"
-            />{' '}
+            />
           </>
         )
       }}
@@ -47,13 +46,13 @@ const BSelect = () => {
       onNodeExpand={({ node }) => {
         node.className = 'subtree-loading'
         node.icon = 'pi pi-fw pi-file'
-        setCurrentRowIdLoading(node.key)
       }}
       filter
       placeholder="Select Items"
       selectionMode="checkbox"
       metaKeySelection={false}
       display="chip"
+      className="tree-select"
     />
   )
 }

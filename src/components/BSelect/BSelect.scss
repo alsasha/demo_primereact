@@ -26,8 +26,6 @@
   border: $border-focus;
 }
 
-.p-treenode-content.p-highlight {
-}
 .custom-tree-select {
   .p-treeselect-trigger-icon {
     color: $grey-500;
@@ -38,7 +36,7 @@
 }
 
 .p-treeselect-trigger-icon:before {
-  font-size: 14px;
+  font-size: $iconSize;
 }
 
 .p-chip-text {
@@ -62,7 +60,7 @@
 }
 
 .p-treeselect-filter-icon pi {
-  font-size: 14px;
+  font-size: $iconSize;
 }
 
 .p-treeselect-panel .p-treeselect-header {
@@ -81,7 +79,7 @@
 }
 
 .p-tree-toggler-icon:before {
-  font-size: 14px;
+  font-size: $iconSize;
 }
 
 .p-tree .p-tree-container .p-treenode .p-treenode-content:focus.p-highlight {
@@ -126,10 +124,7 @@
     width: 32px;
     height: 32px;
     .pi:before {
-      font-size: 14px;
+      font-size: $iconSize;
     }
   }
-}
-
-.subtree-loading {
 }

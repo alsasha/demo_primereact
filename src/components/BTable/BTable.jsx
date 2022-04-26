@@ -79,7 +79,6 @@ const BTable = () => {
       <>
         <div className="table-header-top">
           <Button icon="pi pi-filter" className="p-button-text" aria-label="Submit" />
-
           <div className="p-inputgroup">
             <InputText type="search" onInput={onSearchInput} placeholder="Search by Name" size="50" />
             <span className="p-inputgroup-addon">
@@ -118,7 +117,14 @@ const BTable = () => {
     )
   }
 
-  console.log('==========>tableData', tableData)
+  const expandableTemplate = rowData => {
+    return (
+      <>
+        {rowData.children ? <i className="pi pi-folder" /> : null}
+        <span>{rowData.data.name}</span>
+      </>
+    )
+  }
 
   return (
     <TreeTable
@@ -136,7 +142,7 @@ const BTable = () => {
       header={header}
       onSort={handleSortColumn}
     >
-      <Column style={{ width: '200px' }} field="name" header="Name" expander sortable />
+      <Column style={{ width: '200px' }} body={expandableTemplate} field="name" header="Name" expander sortable />
       <Column field="description" header="Description" sortable />
       <Column field="jobType" header="Job Type" sortable />
       <Column field="dueDate" header="Due Date" sortable />

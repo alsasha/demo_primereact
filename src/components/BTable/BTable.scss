@@ -1,62 +1,43 @@
 @import '/src/styles/colors.scss';
 @import '/src/styles/typography.scss';
 
-.p-treetable-header {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-
-  .table-header-top {
+.p-treetable {
+  .p-treetable-header {
     display: flex;
-    gap: 5px;
-    align-items: center;
-    justify-content: flex-end;
+    flex-direction: column;
+    gap: 10px;
 
-    .p-button {
-      min-width: auto;
+    .table-header-top {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      justify-content: flex-end;
+
+      .p-button {
+        min-width: auto;
+      }
     }
-  }
 
-  .table-header-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
+    .table-header-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
 
-  .p-inputgroup {
-    max-width: 300px;
+    .p-inputgroup {
+      max-width: 300px;
 
-    .p-inputgroup-addon {
+      .p-inputgroup-addon {
+        border: $border-default;
+        border-left: 0;
+        padding: 12px;
+      }
+    }
+
+    .p-inputtext.p-component {
       border: $border-default;
-      border-left: 0;
-      padding: 12px;
+      border-right: 0;
+      padding: 10px;
     }
   }
-
-  .p-inputtext.p-component {
-    border: $border-default;
-    border-right: 0;
-    padding: 10px;
-  }
-}
-
-.p-button:enabled:focus,
-.p-button:not(button):not(a):not(.p-disabled):focus {
-  background: $grey-100;
-}
-
-.p-button.p-button-text {
-  color: $grey-900;
-}
-
-.p-button.p-button-text:enabled:hover,
-.p-button.p-button-text:not(button):not(a):not(.p-disabled):hover {
-  color: $grey-900;
-}
-
-.p-button.p-button-text:enabled:focus,
-.p-button.p-button-text:not(button):not(a):not(.p-disabled):focus,
-.p-button.p-button-outlined:enabled:focus,
-.p-button.p-button-outlined:not(button):not(a):not(.p-disabled):focus {
-  background: $grey-100;
 }
